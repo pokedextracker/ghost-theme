@@ -1,0 +1,26 @@
+{
+  "name": "pokedextracker",
+  "version": "0.0.1",
+  "description": "Ghost Theme for the PokédexTracker Blog",
+  "scripts": {
+    "setup": "npm run setup:ghost && npm run setup:link && npm run setup:package",
+    "setup:link": "rm -rf ghost/content/themes/pokedextracker && ln -sf $(pwd)/theme $(pwd)/ghost/content/themes/pokedextracker",
+    "setup:ghost": "git submodule init && git submodule update && cd ghost && npm i && ./node_modules/.bin/grunt init",
+    "setup:package": "cd theme && ln -f ../package.json .",
+    "start": "cd ghost && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pokedextracker/ghost-theme.git"
+  },
+  "keywords": [
+    "ghost",
+    "theme"
+  ],
+  "author": "Robin Joseph <robin.joseph@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pokedextracker/pokedextracker.com/issues"
+  },
+  "homepage": "https://github.com/pokedextracker/ghost-theme#readme"
+}
