@@ -1,6 +1,6 @@
 {
   "name": "pokedextracker",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Ghost Theme for the PokédexTracker Blog",
   "scripts": {
     "bundle": "zip -r pokedextracker-$(cat package.json | grep '\"version\"' | cut -d '\"' -f4).zip theme",
