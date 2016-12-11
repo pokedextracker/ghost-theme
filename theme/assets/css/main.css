@@ -1,9 +1,271 @@
+/* helpers */
+
 html {
   -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Alegreya Sans', 'Helvetica', sans-serif;
+}
+
+a { color: #18447d; }
+a:hover { color: #12345f; }
+a:focus { color: #12345f; }
+
+p {
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* main header */
+
+.main-header {
+  background: #ffd924 url('https://pokedextracker.com/pattern.png') repeat center center;
+  background-size: 500px 250px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.main-header-content {
+  animation: slide 1s cubic-bezier(0,0,.05,1) forwards;
+  -webkit-animation: slide 1s cubic-bezier(0,0,.05,1) forwards;
+
+  position: relative;
+  top: -100px;
+}
+
+.main-header-content img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.main-header-content h1 {
+  margin: 0;
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #18447d;
+}
+
+.main-header-content h1 a {
+  text-decoration: none;
+}
+
+/* main content */
+
+.content {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.post-preview {
+  margin: 100px 0;
+}
+
+.post-header {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #f1f1f1;
+}
+
+.post-header time {
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.post-header .post-tags {
+  float: right;
+}
+
+.post-header .post-tags a {
+  vertical-align: top;
+  margin-left: 6px;
+}
+
+.post-tags a {
+  margin-left: 4px;
+  border-radius: 3px;
+  font-size: 10px;
+  padding: 4px 6px;
+  background-color: #f1f1f1;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.post-header .post-tags a:hover {
+  background-color: #e8e8e8;
+}
+
+.post-preview h2 {
+  font-size: 35px;
+  margin: 40px 0 20px;
+}
+
+.post-preview h2 a {
+  text-decoration: none;
+}
+
+.post-preview .read-more {
+  margin-left: 5px;
+}
+
+.post-preview .read-more .fa {
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+.pagination {
+  text-align: center;
+  font-size: 14px;
+}
+
+.pagination > span {
+  margin: 0 20px;
+  color: #ababab;
+}
+
+.pagination a {
+  visibility: hidden;
+}
+
+.pagination a .fa {
+  font-size: 10px;
+  text-decoration: underline;
+}
+
+.pagination a.visible {
+  visibility: visible;
+}
+
+@media (max-width: 750px) {
+  .content {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-header-content h1 {
+    font-size: 30px;
+  }
+
+  .main-header {
+    padding: 70px 0;
+  }
+
+  .post-preview {
+    margin: 70px 0;
+  }
+
+  .post-header .post-tags {
+    display: none;
+  }
+}
+
+/* main footer */
+
+.main-footer {
+  margin-top: 100px;
+  padding: 100px 0;
+  text-align: center;
+  background-color: #f7f7f7;
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.main-footer a {
+  text-decoration: none;
+}
+
+.main-footer .fa {
+  vertical-align: middle;
+  font-size: 5px;
+  margin: 0 10px;
+  color: #d2d2d2;
+}
+
+/* post content */
+
+.post {
+  margin: 100px 0 0;
+}
+
+.post .post-title {
+  font-size: 45px;
+  color: #18447d;
+  text-align: center;
+}
+
+.post h1 { font-size: 35px; }
+
+.post h2 { font-size: 25px; }
+
+.post h3 { font-size: 20px; }
+
+.post-footer {
+  margin-top: 100px;
+  border-top: 3px solid #f1f1f1;
+  text-align: center;
+}
+
+.post-footer h4 {
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.post-footer h4 a {
+  text-decoration: none;
+  margin: 0 2px;
 }
