@@ -1,0 +1,40 @@
+{{!< default}}
+
+{{!-- The comment above "< default" means - insert everything in this file into
+    the {{{body}}} of the default.hbs template, containing the blog header/footer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+<main class="content" role="main">
+  <article class="{{post_class}}">
+
+    <div class="post-header">
+      <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM DD YYYY"}}</time>
+      <div class="post-tags">{{tags separator=""}}</div>
+    </div>
+
+    <section class="post-content">
+      <h1 class="post-title">{{title}}</h1>
+      {{#if image}}<img class="post-hero-image" src="{{image}}" alt="{{title}}" />{{/if}}
+      {{content}}
+    </section>
+
+    <footer class="post-footer">
+      <h4>
+        Share this post:&nbsp;
+        <a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+          onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </h4>
+    </footer>
+
+  </article>
+</main>
+
+{{/post}}
