@@ -55,7 +55,7 @@
         <div class="main-header-content">
           <a href="{{@blog.url}}"><img src="https://pokedextracker.com/pokeball.svg"></a>
           <h1 class="page-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-          {{#is "tag"}}<p class="post-tags">Viewing posts tagged with <a href="/tag/{{tag.slug}}">{{tag.name}}</a></p>{{/is}}
+          {{#is "tag"}}<p class="post-tags">Viewing posts tagged with <a href="{{tag.url}}">{{tag.name}}</a></p>{{/is}}
         </div>
       </header>
 
