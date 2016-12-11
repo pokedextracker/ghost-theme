@@ -38,3 +38,6 @@ jspm_packages
 
 # Hard-linked package.json
 theme/package.json
+
+# ZIP archives
+*.zip
