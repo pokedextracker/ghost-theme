@@ -22,4 +22,10 @@ To test the theme as you make changes, just run `npm start` to start the Ghost i
 
 ## Deployment
 
-This theme is meant to be deployed as a bundled zip file. More details to come once I've figured it out...
+This theme is meant to be deployed as a bundled zip file. Before creating the bundle, you should cut a new version first. Then, after the tag has been created, you can run the bundle script to create the zip file which can then be uploaded directly to any Ghost blog.
+
+```bash
+$ npm i
+$ npm run release:patch # or release:minor or release:major
+$ npm run bundle
+```
