@@ -1,3 +1,9 @@
+#### 1.0.1 (2016-12-10)
+
+##### Bug Fixes
+
+* **meta:** remove unnecessary og meta tags ([40d7d1a7](https://github.com/pokedextracker/ghost-theme/commit/40d7d1a7c8452e1e0522849c5b66130d077aae3d))
+
 ## 1.0.0 (2016-12-10)
 
 ##### Chores
