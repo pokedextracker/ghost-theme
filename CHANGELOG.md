@@ -1,3 +1,13 @@
+#### 1.0.2 (2018-05-13)
+
+##### New Features
+
+* **styles:**  add <kbd> styles ([#6](https://github.com/pokedextracker/ghost-theme/pull/6)) ([9aef97f8](https://github.com/pokedextracker/ghost-theme/commit/9aef97f84ec5034252000e5cfebb55835d7f5d19))
+
+##### Bug Fixes
+
+* **bundle:**  relink package.json after npm version ([138b37c9](https://github.com/pokedextracker/ghost-theme/commit/138b37c987ea65bfe912f9e6c627f42b2d42ff12))
+
 #### 1.0.1 (2016-12-10)
 
 ##### Bug Fixes
