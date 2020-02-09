@@ -24,9 +24,13 @@ a { color: #18447d; }
 a:hover { color: #12345f; }
 a:focus { color: #12345f; }
 
-p {
+p, li {
   font-size: 17px;
   line-height: 1.4;
+}
+
+li {
+  margin-bottom: 5px;
 }
 
 img {
