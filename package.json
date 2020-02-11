@@ -9,9 +9,9 @@
     "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags && npm run setup:package",
     "setup": "npm run setup:ghost && npm run setup:link && npm run setup:package",
     "setup:link": "rm -rf ghost/content/themes/pokedextracker && ln -sf $(pwd)/theme $(pwd)/ghost/content/themes/pokedextracker",
-    "setup:ghost": "git submodule init && git submodule update && cd ghost && npm i && ./node_modules/.bin/grunt init",
+    "setup:ghost": "rm -rf ghost && ghost install 2.19.4 --local --dir ghost --no-start --no-enable --no-prompt",
     "setup:package": "cd theme && ln -f ../package.json .",
-    "start": "cd ghost && npm start"
+    "start": "ghost run --dir ghost --development"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/pokedextracker/ghost-theme#readme",
   "devDependencies": {
-    "generate-changelog": "^1.0.2"
+    "generate-changelog": "^1.0.2",
+    "ghost-cli": "^1.13.1"
   }
 }
