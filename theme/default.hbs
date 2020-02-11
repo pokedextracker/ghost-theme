@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>{{meta_title}}</title>
-    <meta name="description" content="{{meta_description}}" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -47,8 +46,8 @@
     <div class="site-wrapper">
       <header class="main-header">
         <div class="main-header-content">
-          <a href="{{@blog.url}}"><img src="https://pokedextracker.com/pokeball.svg"></a>
-          <h1 class="page-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+          <a href="{{@site.url}}"><img src="https://pokedextracker.com/pokeball.svg"></a>
+          <h1 class="page-title"><a href="{{@site.url}}">{{@site.title}}</a></h1>
           {{#is "tag"}}<p class="post-tags">Viewing posts tagged with <a href="{{tag.url}}">{{tag.name}}</a></p>{{/is}}
         </div>
       </header>
@@ -58,7 +57,7 @@
       <footer class="main-footer">
         <a href="https://pokedextracker.com">PokédexTracker</a>
         <i class="fa fa-circle"></i>
-        <a href="{{@blog.url}}">Blog</a>
+        <a href="{{@site.url}}">Blog</a>
         <i class="fa fa-circle"></i>
         <a href="https://twitter.com/PokedexTracker">Twitter</a>
         <i class="fa fa-circle"></i>

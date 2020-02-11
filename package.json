@@ -18,10 +18,12 @@
     "url": "git+https://github.com/pokedextracker/ghost-theme.git"
   },
   "keywords": [
-    "ghost",
-    "theme"
+    "ghost-theme"
   ],
-  "author": "Robin Joseph <robin.joseph@me.com>",
+  "author": {
+    "name": "PokedexTracker",
+    "email": "pokedextrackerapp@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pokedextracker/pokedextracker.com/issues"

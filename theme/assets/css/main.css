@@ -288,3 +288,10 @@ kbd {
   text-decoration: none;
   margin: 0 2px;
 }
+
+/* required classes in Ghost 2.0 that we don't use */
+.kg-width-wide {}
+.kg-width-full {}
+.kg-gallery-container {}
+.kg-gallery-row {}
+.kg-gallery-image {}
