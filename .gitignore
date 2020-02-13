@@ -41,3 +41,5 @@ theme/package.json
 
 # ZIP archives
 *.zip
+
+ghost
