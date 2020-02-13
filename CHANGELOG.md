@@ -1,3 +1,9 @@
+#### 1.1.1 (2020-02-13)
+
+##### Bug Fixes
+
+* **local:**  update local setup for ghost v2.19.4 ([#9](https://github.com/pokedextracker/ghost-theme/pull/9)) ([2da7f736](https://github.com/pokedextracker/ghost-theme/commit/2da7f7362b58e81d3a0d2f005ba1d0aa1aa5606f))
+
 ### 1.1.0 (2019-05-05)
 
 #### 1.0.2 (2018-05-13)
