@@ -11,11 +11,9 @@ When you clone this repo for the first time, and you intend of making changes,
 there are a few things you need to do before you get started (you only have to
 do this the very first time):
 
-1. Make sure you are using Node v10.19.0 ([Ghost recommends
-   `v10.x`](https://ghost.org/faq/node-versions/) at the time of writing). If
-   you have [`nodenv`](https://github.com/nodenv/nodenv), this means running
-   `nodenv install` in the current directory which will use the `.node-version`
-   file.
+1. Make sure you are using the correct Node version. If you have
+   [`nodenv`](https://github.com/nodenv/nodenv), this means running `nodenv
+   install` in the current directory which will use the `.node-version` file.
 2. Install dependencies with `yarn`.
 3. Get everything setup correctly by running `yarn setup`.
 4. Run `yarn start` to start Ghost, navigate to
