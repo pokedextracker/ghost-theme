@@ -1,3 +1,9 @@
+#### 1.1.3 (2023-06-04)
+
+##### Bug Fixes
+
+* **styles:**  add styles for hr ([#18](https://github.com/pokedextracker/ghost-theme/pull/18)) ([a63e082b](https://github.com/pokedextracker/ghost-theme/commit/a63e082b35bdec07426c02b2f2fbb2eadffc1245))
+
 #### 1.1.2 (2023-06-04)
 
 ##### Chores
