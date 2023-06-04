@@ -39,6 +39,11 @@ img {
   width: auto;
 }
 
+hr {
+  border: none;
+  border-top: 3px solid #f1f1f1;
+}
+
 kbd {
   display: inline-block;
   padding: 3px 5px;
