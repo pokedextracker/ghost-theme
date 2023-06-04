@@ -1,3 +1,13 @@
+#### 1.1.2 (2023-06-04)
+
+##### Chores
+
+* **ghost:**  update node and ghost version ([#17](https://github.com/pokedextracker/ghost-theme/pull/17)) ([81b8ef6b](https://github.com/pokedextracker/ghost-theme/commit/81b8ef6b1d4cf765fa5a33af789b724aba30481d))
+
+##### Bug Fixes
+
+* **css:**  set img width/height to auto ([#16](https://github.com/pokedextracker/ghost-theme/pull/16)) ([336e88d9](https://github.com/pokedextracker/ghost-theme/commit/336e88d97d49d087691a4186aaea8ab17075fe2b))
+
 #### 1.1.1 (2020-02-13)
 
 ##### Bug Fixes
