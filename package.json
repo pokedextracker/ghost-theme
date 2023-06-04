@@ -9,7 +9,7 @@
     "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags && npm run setup:package",
     "setup": "npm run setup:ghost && npm run setup:link && npm run setup:package",
     "setup:link": "rm -rf ghost/content/themes/pokedextracker && ln -sf $(pwd)/theme $(pwd)/ghost/content/themes/pokedextracker",
-    "setup:ghost": "rm -rf ghost && ghost install 2.19.4 --local --dir ghost --no-start --no-enable --no-prompt",
+    "setup:ghost": "rm -rf ghost && ghost install 5.46.0 --local --dir ghost --no-start --no-enable --no-prompt",
     "setup:package": "cd theme && ln -f ../package.json .",
     "start": "ghost run --dir ghost --development"
   },
@@ -31,6 +31,6 @@
   "homepage": "https://github.com/pokedextracker/ghost-theme#readme",
   "devDependencies": {
     "generate-changelog": "^1.0.2",
-    "ghost-cli": "^1.13.1"
+    "ghost-cli": "^1.24.0"
   }
 }
